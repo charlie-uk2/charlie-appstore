@@ -4,7 +4,7 @@ services:
     environment:
       - PUID=0
       - PGID=0
-      - QUARKUS_HTTP_AUTH_SESSION_EXPIRATION_KEY=ReplaceWithLongRandomString
+      - QUARKUS_HTTP_AUTH_SESSION_EXPIRATION_KEY=ReplaceWithLongRandomString # change this
     image: athou/commafeed:latest-h2
     deploy:
       resources:
