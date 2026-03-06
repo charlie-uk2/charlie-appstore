@@ -1,1 +1,89 @@
+name: invidious
+services:
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    container_name: invidious
+    restart: unless-stopped
+    environment:
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        hmac_key: "K3p9X2mR7vB4nQ8zL1wY"
+        invidious_companion_key: "J7fR2vN9kQ4xM1pB"
+        invidious_companion:
+          - private_url: "http://invidious-companion:8282/companion"
+    ports:
+      - "3005:3000"
+    depends_on:
+      invidious-db:
+        condition: service_healthy
+      invidious-companion:
+        condition: service_started
+    networks:
+      - invidious-net
+    x-casaos:
+      ports:
+        - container: "3005"
+          description:
+            en_us: "Invidious Web UI"
 
+  invidious-companion:
+    image: quay.io/invidious/invidious-companion:latest
+    container_name: invidious-companion
+    restart: unless-stopped
+    environment:
+      - SERVER_SECRET_KEY=J7fR2vN9kQ4xM1pB
+    networks:
+      - invidious-net
+    cap_drop:
+      - ALL
+    read_only: true
+    volumes:
+      - /DATA/AppData/invidious/companion-cache:/var/tmp/youtubei.js:rw
+
+  invidious-db:
+    image: docker.io/library/postgres:14-alpine
+    container_name: invidious-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=invidious
+      - POSTGRES_USER=kemal
+      - POSTGRES_PASSWORD=kemal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kemal -d invidious"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      invidious-net:
+        aliases:
+          - invidious-db
+    volumes:
+      - /DATA/AppData/invidious/postgres:/var/lib/postgresql/data
+      - /DATA/AppData/invidious/init-db:/docker-entrypoint-initdb.d:ro
+
+networks:
+  invidious-net:
+    driver: bridge
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: invidious
+  author: CasaOS Team
+  category: Charlie
+  description:
+    en_us: Privacy-respecting YouTube frontend.
+  developer: Invidious Team
+  icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/invidious.png
+  tagline:
+    en_us: YouTube without ads or tracking.
+  title:
+    en_us: Invidious
+  port_map: "3005"
