@@ -9,7 +9,7 @@ NOTE -
  
  Invidious & Whoogle are regualary blocked by Google, so their reliability is unpredicatable. 
 
-anchor
+anchor<br>
 baikal
 changedetection
 commafeed
