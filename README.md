@@ -2,8 +2,6 @@
 
 It works great for me, but mileage may vary.
 
-I have switched to using Runtipi, so there are no updates at present.
-
 ---
 
 ### NOTE
