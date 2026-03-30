@@ -3,7 +3,8 @@ It works great for me, but mileage may vary.
 ---
 ### NOTE
 * **Unique Keys:** Certain apps require unique keys and login details. Change these before completing the install.
-* **Service Reliability:** Invidious & Whoogle are regularly blocked by Google, so their reliability is unpredictable.
+* **Service Reliability:** Invidious, Whoogle & Redlib are regularly blocked, so their reliability is unpredictable.
+
 ---
 | App | Description |
 | :--- | :--- |
