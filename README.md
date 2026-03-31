@@ -1,14 +1,15 @@
-# Charlie's CasaOS/ZimaOS App Store
+# Charlie's ZimaOS App Store
 It works great for me, but mileage may vary.
 ---
 ### NOTE
 * **Unique Keys:** Certain apps require unique keys and login details. Change these before completing the install.
-* **Service Reliability:** Invidious, Whoogle & Redlib are regularly blocked, so their reliability is unpredictable.
+* **Service Reliability:** Invidious, Whoogle, Libremdb & Redlib are regularly temporarily blocked, so their reliability is unpredictable.
 
 ---
 | App | Description |
 | :--- | :--- |
 | **anchor** | A lightweight, self-hosted markdown note-taking app. |
+| **arcane** | A modern, user-friendly Docker management platform. |
 | **baikal** | A lightweight CalDAV and CardDAV server for syncing calendars and contacts. |
 | **changedetection** | A tool to monitor websites for content changes and send notifications. |
 | **commafeed** | A minimalist, open-source RSS aggregator inspired by Google Reader. |
