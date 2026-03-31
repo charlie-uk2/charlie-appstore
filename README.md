@@ -8,11 +8,13 @@ It works great for me, but mileage may vary.
 ---
 | App | Description |
 | :--- | :--- |
+| **4get** | A privacy-respecting metasearch engine that aggregates results without tracking. |
 | **anchor** | A lightweight, self-hosted markdown note-taking app. |
-| **arcane** | A modern, user-friendly Docker management platform. |
+| **arcane** | A modern, easy-to-use web interface and platform for managing Docker containers. |
 | **baikal** | A lightweight CalDAV and CardDAV server for syncing calendars and contacts. |
 | **changedetection** | A tool to monitor websites for content changes and send notifications. |
 | **commafeed** | A minimalist, open-source RSS aggregator inspired by Google Reader. |
+| **dockhand** | A utility designed for managing, backing up, and restoring Docker volumes. |
 | **feedbin** | A clean, fast, and modern web-based RSS reader. |
 | **flatnotes** | A focused markdown note-taker that operates on a flat file structure. |
 | **glasskeep** | An encrypted, private digital vault for storing sensitive snippets. |
