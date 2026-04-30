@@ -1,33 +1,3 @@
-# Charlie's ZimaOS App Store
-It works great for me, but mileage may vary.
----
-### NOTE
-* **Unique Keys:** Certain apps require unique keys and login details. Change these before completing the install.
-* **Service Reliability:** Invidious, Whoogle, Libremdb & Redlib are regularly temporarily blocked, so their reliability is unpredictable.
+Moved to Codeberg
 
----
-| App | Description |
-| :--- | :--- |
-| **4get** | A privacy-respecting metasearch engine that aggregates results without tracking. |
-| **anchor** | A lightweight, self-hosted markdown note-taking app. |
-| **arcane** | A modern, easy-to-use web interface and platform for managing Docker containers. |
-| **baikal** | A lightweight CalDAV and CardDAV server for syncing calendars and contacts. |
-| **changedetection** | A tool to monitor websites for content changes and send notifications. |
-| **commafeed** | A minimalist, open-source RSS aggregator inspired by Google Reader. |
-| **dockhand** | A utility designed for managing, backing up, and restoring Docker volumes. |
-| **feedbin** | A clean, fast, and modern web-based RSS reader. |
-| **flatnotes** | A focused markdown note-taker that operates on a flat file structure. |
-| **glasskeep** | An encrypted, private digital vault for storing sensitive snippets. |
-| **homebox** | An inventory management system for tracking home tools and assets. |
-| **invidious** | An alternative, privacy-respecting front-end for YouTube. |
-| **karakeep** | A personal management tool for bookmarks and link organization. |
-| **libretranslate** | A free and open-source machine translation API. |
-| **microbin** | A tiny, self-hosted pastebin for sharing text and code snippets. |
-| **omnitools** | A suite of web utilities for common technical and developer tasks. |
-| **owncloud** | A suite for self-hosting file synchronization and cloud storage. |
-| **redlib** | A private, lightweight front-end for Reddit. |
-| **searxng** | A privacy-focused, hackable metasearch engine. |
-| **shinobi** | An open-source NVR and CCTV video surveillance platform. |
-| **stirling-pdf** | A self-hosted web tool for merging, splitting, and editing PDFs. |
-| **uptime-kuma** | A self-hosted monitoring tool for website and service uptime. |
-| **whoogle-search** | A privacy-focused Google search proxy that removes ads and tracking. |
+https://codeberg.org/charlie-uk/charlies-zimaos-app-store
