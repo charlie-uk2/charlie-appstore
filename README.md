@@ -1,3 +1,3 @@
 Moved to Codeberg
 
-https://codeberg.org/charlie-uk/charlies-zimaos-app-store
+https://codeberg.org/immutablecharlie/charlies-zimaos-app-store
